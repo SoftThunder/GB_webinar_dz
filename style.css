@@ -440,3 +440,42 @@ line-height: 17px;
 color: #222224;
 opacity: 0.67;
 }
+.footer {
+    background: #222224;
+    min-height: 79px;
+}
+.page-footer-txt {
+  font-size: 16px;
+line-height: 19px;
+
+color: #FBFBFB;  
+}
+.page-footer-socials {
+    width: 300px;
+   
+    display: flex;
+    justify-content: space-between;
+}
+.page-footer-socials-item {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+}
+.icon-item:nth-child(1) {
+    background-position: 0 0;
+  }
+  
+  .icon-item:nth-child(2){
+    background-position: -59px 0;
+  }
+  
+  .icon-item:nth-child(3){
+    background-position: -118px 0;
+  }
+  
+  .icon-item:nth-child(4){
+    background-position: -177px 0;
+  }
+  
+ 
