@@ -313,6 +313,7 @@ color: #F16D7F;
 .txt-browse-all-products {
    font-size: 16px;
 line-height: 19px;
+text-decoration: none;
 
 color: #F26376; 
 }
@@ -478,4 +479,15 @@ color: #FBFBFB;
     background-position: -177px 0;
   }
   
- 
+  i {
+      
+      width: 32px;
+      height: 32px;
+    color:black;
+    display:inline-block;
+    font-size: 25px;
+    line-height: 50px;
+    background-color:white;
+    vertical-align: center;
+    text-align: center;
+ }
