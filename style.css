@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
     }
+    a {
+        text-decoration: none;
+    }
     .container {
         width: 1600px;
         margin: 0 auto;
@@ -245,14 +248,15 @@ opacity: 0;
 }
 
 .add-cart {
-    min-height: 43px;
-    max-width: 138px;
+    height: 43px;
+    width: 138px;
     border: 1px solid #FFFFFF;
    margin-top:188px ;
    margin-left: 111px;
   display: flex;
   align-items: center;
   justify-content: center;
+   background-color: transparent;
   
 }
  
@@ -264,7 +268,7 @@ opacity: 0;
 }
 
 .cover-item-photo:hover {
-   opacity: 10;
+   opacity: 1;
     
 }
 .products-item-title {
@@ -278,6 +282,7 @@ opacity: 0;
 .add-cart-img {
     min-width: 26px;
     max-height: 24px;
+    
 }
 .products-item-txt {
     padding-top: 13px;
@@ -309,6 +314,7 @@ color: #F16D7F;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: transparent;
 }
 .txt-browse-all-products {
    font-size: 16px;
@@ -430,10 +436,12 @@ display: flex;
     min-width: 100px;
     min-height: 49px;
     border-radius: 0 50px 50px 0;
-border: none;
+    border: none;
+    color: #FFFFFF;
 
     
 }
+
 .subscribing-form-email::-webkit-input-placeholder {
     padding-left: 22px;
     font-size: 14px;
@@ -444,41 +452,30 @@ opacity: 0.67;
 .footer {
     background: #222224;
     min-height: 79px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
 }
 .page-footer-txt {
   font-size: 16px;
 line-height: 19px;
-
+margin-left: 235px;
 color: #FBFBFB;  
 }
 .page-footer-socials {
     width: 300px;
-   
+   margin-right: 230;
     display: flex;
-    justify-content: space-between;
+   
+   
 }
 .page-footer-socials-item {
     display: block;
     width: 32px;
     height: 32px;
-    background: #FFFFFF;
+    margin-right: 8px;
 }
-.icon-item:nth-child(1) {
-    background-position: 0 0;
-  }
-  
-  .icon-item:nth-child(2){
-    background-position: -59px 0;
-  }
-  
-  .icon-item:nth-child(3){
-    background-position: -118px 0;
-  }
-  
-  .icon-item:nth-child(4){
-    background-position: -177px 0;
-  }
-  
+
   i {
       
       width: 32px;
@@ -488,6 +485,10 @@ color: #FBFBFB;
     font-size: 25px;
     line-height: 50px;
     background-color:white;
-    vertical-align: center;
+  padding-top: 10px;
     text-align: center;
+ }
+ .page-footer-socials-item:hover i {
+    background: #F16D7F;
+    color: #E1E1E1;  
  }
