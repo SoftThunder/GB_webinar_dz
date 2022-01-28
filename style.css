@@ -36,6 +36,10 @@ padding-left:231px ;
 align-items: center;
 padding-right:240px ;
 }
+.btn_menu {
+   background-color: transparent;
+   border: none; 
+}
 .menu_img {
     padding: 33px;
 }
@@ -438,8 +442,6 @@ display: flex;
     border-radius: 0 50px 50px 0;
     border: none;
     color: #FFFFFF;
-
-    
 }
 
 .subscribing-form-email::-webkit-input-placeholder {
@@ -464,10 +466,9 @@ color: #FBFBFB;
 }
 .page-footer-socials {
     width: 300px;
-   margin-right: 230;
+    margin-right: 230px;
     display: flex;
-   
-   
+
 }
 .page-footer-socials-item {
     display: block;
