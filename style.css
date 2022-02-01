@@ -616,8 +616,10 @@ flex-wrap: wrap;
   .nav-catalog {
       width: 100%;
       display: flex;
+      align-items: center;
   }
   /*  элемент фильтр*/
+ 
   input:focus,{
   outline: none;
 }
@@ -638,6 +640,7 @@ background-color:white;
   width: 360px;
   padding: 13px 16px 16px 16px;
   box-sizing: border-box;
+  margin-right: 30px;
 }
 .filter-btn {
   display: block;
@@ -653,7 +656,7 @@ background-color:white;
 .filter-btn span {
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 16.8px;
   text-transform: uppercase;
 }
@@ -746,16 +749,18 @@ background-color:white;
   color: #000;
 }
  /* фильтр Размер  Цена*/
+ .sort-by {
+display: flex;
+ }
  input:focus {
   outline: none;
 }
-input:focus-visible, 
-button:focus-visible{
+input:focus-visible {
   outline: 2px solid #F16D7F;
 }
 
 .list-size {
-  width: 80px;
+  margin-right: 48px;
   border: none;
   background-color: transparent;
 }
@@ -773,13 +778,11 @@ button:focus-visible{
   background-color: transparent;
   text-align: left;
   text-transform: uppercase;
-  position: relative;
+  
 }
 .list-size-btn-title svg {
   fill: #6F6E6E;
-  position: absolute;
-  top: 40%;
-  left: 60%;
+padding-left: 10px;
 }
 .list-size-btn-title:hover {
   color: #F16D7F;
