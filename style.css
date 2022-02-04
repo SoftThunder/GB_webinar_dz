@@ -835,7 +835,22 @@ margin-bottom: 96px;
   .carousel {
     background: #F7F7F7;
     min-height: 777px;
-   
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+  }
+  .arrow-carousel {
+    width: 47px;
+    height: 47px;
+    background-color:#EAEAEA; 
+    text-align: center;
+  }
+  .fas {
+    background-color: transparent;
+    font-size: 40px;   
+  }
+  .fas:hover {
+    color: #F16D7F;;
   }
   .product-properties-wrp {
         margin: 0 auto;
