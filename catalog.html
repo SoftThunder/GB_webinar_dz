@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Главная</title>
-
+    <title>Каталог</title>
 </head>
 
 <body>
@@ -19,8 +18,8 @@
         <section class="header-menu container">
             <div class="left_header">
 
-                <a href="#"><img class="logo_img" src="img/logo.svg" alt=""></a>
-                <a href="catalog.html"><img class="search_img" src="img/search.svg" alt=""> </a>
+                <a href="index.html"><img class="logo_img" src="img/logo.svg" alt=""></a>
+                <a href=""><img class="search_img" src="img/search.svg" alt=""> </a>
             </div>
             <div class="right_header">
                 <button class="btn_menu">
@@ -40,194 +39,122 @@
             </div>
         </section>
     </header>
-    <!-- Начало Баннера -->
-    <section class="page-header-banner">
-        <div class="content-banner container">
-            <div class="left_desktop">
-                <img src="img/desktop_img.png" alt="">
-            </div>
-            <div class="brand">
-                <div class="brand-title-wrp">
-                    <h2 class="brand-title">The brand</h2>
-                    <h3 class="brand-subtitle">
-                        of luxerious
-                        <span>fashion</span>
-                    </h3>
-                </div>
-            </div>
+    <!-- панель с хлебными крошками -->
+    <nav class="nav-panel">
+        <div class="nav-panel-content container">
+            <h2 class="header-category">New arriwals</h2>
+            <ul class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">New arrivals</a></li>
+            </ul>
         </div>
-    </section>
-    <!-- Начало основного контента -->
-    <main class="main_content container">
-        <!-- Меню -->
-        <div class="menu_category">
-            <a href="catalog.html">
-                <div class="woomen">
-                    <div class="text_category">
-                        <div class="promo">
-                            <p> 30% OFF</p>
-                        </div>
-                        <span class="name_category">FOR WOMEN</span>
-                    </div>
-                </div>
-            </a>
-
-            <a href="catalog.html">
-                <div class="men">
-                    <div class="text_category">
-                        <div class="promo">
-                            <p> HOT DEALS</p>
-                        </div>
-                        <span class="name_category">FOR MEN</span>
-                    </div>
-                </div>
-            </a>
-            <a href="catalog.html">
-                <div class="kids">
-                    <div class="text_category">
-                        <div class="promo">
-                            <p> NEW ARRIVALS</p>
-                        </div>
-                        <span class="name_category">FOR KIDS</span>
-                    </div>
-                </div>
-            </a>
-
-
-            <div class="accesories">
-                <a href="catalog.html">
-                    <div class="text_category">
-                        <div class="promo">
-                            <p>LUXIROUS &amp;&nbsp;TRENDY</p>
-                        </div>
-                        <span class="name_category"> ACCESORIES</span>
-                    </div>
-                </a>
-            </div>
-
-
-
-
-        </div>
-
+    </nav>
+    <!-- основной контент -->
+    <main class="main-catalog container">
 
         <section class="products">
-            <header class="header-featured">
-                <h2 class="products-title">Fetured items</h2>
-                <h2 class="products-subtitle">Shop for items based on what we featured in this week</h2>
-            </header>
-            <div class="products-item">
-                <div class="products-item-photo">
-                    <img class="" src="img/item1.png" alt="">
-
-                    <div class="cover-item-photo">
-                        <button class="add-cart">
-                            <img class="add-cart-img" src="img/add_cart.png" alt="">
-                            <span class="title-add-cart">Add to Cart</span>
-                        </button>
-                    </div>
-
-
-
+            <nav class="nav-catalog">
+                <div class="filter">
+                    <input type="checkbox" id="switch-filter">
+                    <label class="filter-btn" for="switch-filter">
+                        <span>filter</span>
+                        <svg width="15" height="10" viewBox="0 0 15 10" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" />
+                        </svg>
+                    </label>
+                    <ul class="filter-list">
+                        <li class="filter-list-item">
+                            <a href="#" class="filter-list-item-link">category</a>
+                            <ul class="filter-sublist">
+                                <li class="filter-sublist-item">
+                                    <a href="#">Accessories</a>
+                                </li>
+                                <li class="filter-sublist-item">
+                                    <a href="#">Bags</a>
+                                </li>
+                                <li class="filter-sublist-item">
+                                    <a href="#">Denim</a>
+                                </li>
+                                <li class="filter-sublist-item">
+                                    <a href="#">Hoodies &amp;&nbsp;Sweatshirts</a>
+                                </li>
+                                <li class="filter-sublist-item">
+                                    <a href="#">Jackets &amp;&nbsp;Coats</a>
+                                </li>
+                                <li class="filter-sublist-item">
+                                    <a href="#">Polos</a>
+                                </li>
+                                <li class="filter-sublist-item">
+                                    <a href="#">Shirts</a>
+                                </li>
+                                <li class="filter-sublist-item">
+                                    <a href="#">Shoes</a>
+                                </li>
+                                <li class="filter-sublist-item">
+                                    <a href="#">Sweaters &amp;&nbsp;Knits</a>
+                                </li>
+                                <li class="filter-sublist-item">
+                                    <a href="#">T-Shirts</a>
+                                </li>
+                                <li class="filter-sublist-item">
+                                    <a href="#">Tanks</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="filter-list-item">
+                            <a href="#" class="filter-list-item-link">brand</a>
+                        </li>
+                        <li class="filter-list-item">
+                            <a href="#" class="filter-list-item-link">designer</a>
+                        </li>
+                    </ul>
                 </div>
 
-                <span class="products-item-title">ellery x m'o capsule</span>
-                <p class="products-item-txt">Known for her sculptural takes on traditional tailoring, Australian
-                    arbiter of
-                    cool Kym Ellery teams up with Moda Operandi.</p>
-                <span class="products-item-price">$52.00</span>
-            </div>
-            <div class="products-item">
-                <div class="products-item-photo">
-                    <img class="" src="img/item2.png" alt="">
-
-                    <div class="cover-item-photo">
-                        <button class="add-cart">
-                            <img class="add-cart-img" src="img/add_cart.png" alt="">
-                            <span class="title-add-cart">Add to Cart</span>
-                        </button>
-
-                    </div>
-
-
-
+                <div class="sort-by">
+                    <form class="list-size">
+                        <input type="checkbox" id="switch">
+                        <label class="list-size-btn-title">
+                            <span>Trending now</span>
+                            <svg width="11" height="6" viewBox="0 0 11 6" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81723 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214Z" />
+                            </svg>
+                        </label>
+                    </form>
+                    <form class="list-size">
+                        <input type="checkbox" id="switch">
+                        <label class="list-size-btn-title" for="switch">
+                            <span>size</span>
+                            <svg width="11" height="6" viewBox="0 0 11 6" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81723 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214Z" />
+                            </svg>
+                        </label>
+                    </form>
+                    <form class="list-size">
+                        <input type="checkbox" id="switch">
+                        <label class="list-size-btn-title" for="switch">
+                            <span>Price</span>
+                            <svg width="11" height="6" viewBox="0 0 11 6" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81723 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214Z" />
+                            </svg>
+                        </label>
+                    </form>
                 </div>
-
-                <span class="products-item-title">ellery x m'o capsule</span>
-                <p class="products-item-txt">Known for her sculptural takes on traditional tailoring, Australian
-                    arbiter of
-                    cool Kym Ellery teams up with Moda Operandi.</p>
-                <span class="products-item-price">$52.00</span>
-            </div>
+            </nav>
+            <!-- карточка товара -->
             <div class="products-item">
                 <div class="products-item-photo">
-                    <img class="" src="img/item3.png" alt="">
+                    <img class="" src="img/catalog/1.png" alt="">
+
                     <div class="cover-item-photo">
                         <button class="add-cart">
                             <img class="add-cart-img" src="img/add_cart.png" alt="">
                             <span class="title-add-cart">Add to Cart</span>
                         </button>
-
-
-
-                    </div>
-
-                </div>
-                <span class="products-item-title">ellery x m'o capsule</span>
-                <p class="products-item-txt">Known for her sculptural takes on traditional tailoring, Australian
-                    arbiter of
-                    cool Kym Ellery teams up with Moda Operandi.</p>
-                <span class="products-item-price">$52.00</span>
-            </div>
-            <div class="products-item">
-
-                <div class="products-item-photo">
-                    <img class="" src="img/item4.png" alt="">
-                    <div class="cover-item-photo">
-                        <button class="add-cart">
-                            <img class="add-cart-img" src="img/add_cart.png" alt="">
-                            <span class="title-add-cart">Add to Cart</span>
-                        </button>
-
-                    </div>
-
-
-                </div>
-                <span class="products-item-title">ellery x m'o capsule</span>
-                <p class="products-item-txt">Known for her sculptural takes on traditional tailoring, Australian
-                    arbiter of
-                    cool Kym Ellery teams up with Moda Operandi.</p>
-                <span class="products-item-price">$52.00</span>
-            </div>
-            <div class="products-item">
-
-                <div class="products-item-photo">
-                    <img class="" src="img/item5.png" alt="">
-
-                    <div class="cover-item-photo">
-
-                        <button class="add-cart">
-                            <img class="add-cart-img" src="img/add_cart.png" alt="">
-                            <span class="title-add-cart">Add to Cart</span>
-                        </button>
-                    </div>
-                </div>
-                <span class="products-item-title">ellery x m'o capsule</span>
-                <p class="products-item-txt">Known for her sculptural takes on traditional tailoring, Australian
-                    arbiter of
-                    cool Kym Ellery teams up with Moda Operandi.</p>
-                <span class="products-item-price">$52.00</span>
-            </div>
-            <div class="products-item">
-
-                <div class="products-item-photo">
-                    <img class="" src="img/item6.png" alt="">
-                    <div class="cover-item-photo">
-                        <button class="add-cart">
-                            <img class="add-cart-img" src="img/add_cart.png" alt="">
-                            <span class="title-add-cart">Add to Cart</span>
-                        </button>
-
                     </div>
                 </div>
                 <span class="products-item-title">ellery x m'o capsule</span>
@@ -236,19 +163,178 @@
                     cool Kym Ellery teams up with Moda Operandi.</p>
                 <span class="products-item-price">$52.00</span>
             </div>
-            <div class="browse-all">
-                <button class="button-browse-all-products">
-                    <span class="txt-browse-all-products">Browse All Product</span>
-                </button>
-            </div>
+            <!-- конец карточки товара -->
+            <div class="products-item">
+                <div class="products-item-photo">
+                    <img class="" src="img/catalog/2.png" alt="">
 
+                    <div class="cover-item-photo">
+                        <button class="add-cart">
+                            <img class="add-cart-img" src="img/add_cart.png" alt="">
+                            <span class="title-add-cart">Add to Cart</span>
+                        </button>
+
+                    </div>
+                </div>
+                <span class="products-item-title">ellery x m'o capsule</span>
+                <p class="products-item-txt">Known for her sculptural takes on traditional tailoring, Australian
+                    arbiter of
+                    cool Kym Ellery teams up with Moda Operandi.</p>
+                <span class="products-item-price">$52.00</span>
+            </div>
+            <div class="products-item">
+                <div class="products-item-photo">
+                    <img class="" src="img/catalog/3.png" alt="">
+                    <div class="cover-item-photo">
+                        <button class="add-cart">
+                            <img class="add-cart-img" src="img/add_cart.png" alt="">
+                            <span class="title-add-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                </div>
+                <span class="products-item-title">ellery x m'o capsule</span>
+                <p class="products-item-txt">Known for her sculptural takes on traditional tailoring, Australian
+                    arbiter of
+                    cool Kym Ellery teams up with Moda Operandi.</p>
+                <span class="products-item-price">$52.00</span>
+            </div>
+            <div class="products-item">
+
+                <div class="products-item-photo">
+                    <img class="" src="img/catalog/4.png" alt="">
+                    <div class="cover-item-photo">
+                        <button class="add-cart">
+                            <img class="add-cart-img" src="img/add_cart.png" alt="">
+                            <span class="title-add-cart">Add to Cart</span>
+                        </button>
+
+                    </div>
+                </div>
+                <span class="products-item-title">ellery x m'o capsule</span>
+                <p class="products-item-txt">Known for her sculptural takes on traditional tailoring, Australian
+                    arbiter of
+                    cool Kym Ellery teams up with Moda Operandi.</p>
+                <span class="products-item-price">$52.00</span>
+            </div>
+            <div class="products-item">
+
+                <div class="products-item-photo">
+                    <img class="" src="img/catalog/5.png" alt="">
+
+                    <div class="cover-item-photo">
+
+                        <button class="add-cart">
+                            <img class="add-cart-img" src="img/add_cart.png" alt="">
+                            <span class="title-add-cart">Add to Cart</span>
+                        </button>
+                    </div>
+                </div>
+                <span class="products-item-title">ellery x m'o capsule</span>
+                <p class="products-item-txt">Known for her sculptural takes on traditional tailoring, Australian
+                    arbiter of
+                    cool Kym Ellery teams up with Moda Operandi.</p>
+                <span class="products-item-price">$52.00</span>
+            </div>
+            <div class="products-item">
+
+                <div class="products-item-photo">
+                    <img class="" src="img/catalog/6.png" alt="">
+                    <div class="cover-item-photo">
+                        <button class="add-cart">
+                            <img class="add-cart-img" src="img/add_cart.png" alt="">
+                            <span class="title-add-cart">Add to Cart</span>
+                        </button>
+
+                    </div>
+                </div>
+                <span class="products-item-title">ellery x m'o capsule</span>
+                <p class="products-item-txt">Known for her sculptural takes on traditional tailoring, Australian
+                    arbiter of
+                    cool Kym Ellery teams up with Moda Operandi.</p>
+                <span class="products-item-price">$52.00</span>
+            </div>
+            <div class="products-item">
+
+                <div class="products-item-photo">
+                    <img class="" src="img/catalog/7.png" alt="">
+                    <div class="cover-item-photo">
+                        <button class="add-cart">
+                            <img class="add-cart-img" src="img/add_cart.png" alt="">
+                            <span class="title-add-cart">Add to Cart</span>
+                        </button>
+
+                    </div>
+                </div>
+                <span class="products-item-title">ellery x m'o capsule</span>
+                <p class="products-item-txt">Known for her sculptural takes on traditional tailoring, Australian
+                    arbiter of
+                    cool Kym Ellery teams up with Moda Operandi.</p>
+                <span class="products-item-price">$52.00</span>
+            </div>
+            <div class="products-item">
+
+                <div class="products-item-photo">
+                    <img class="" src="img/catalog/8.png" alt="">
+                    <div class="cover-item-photo">
+                        <button class="add-cart">
+                            <img class="add-cart-img" src="img/add_cart.png" alt="">
+                            <span class="title-add-cart">Add to Cart</span>
+                        </button>
+
+                    </div>
+                </div>
+                <span class="products-item-title">ellery x m'o capsule</span>
+                <p class="products-item-txt">Known for her sculptural takes on traditional tailoring, Australian
+                    arbiter of
+                    cool Kym Ellery teams up with Moda Operandi.</p>
+                <span class="products-item-price">$52.00</span>
+            </div>
+            <div class="products-item">
+
+                <div class="products-item-photo">
+                    <img class="" src="img/catalog/9.png" alt="">
+                    <div class="cover-item-photo">
+                        <button class="add-cart">
+                            <img class="add-cart-img" src="img/add_cart.png" alt="">
+                            <span class="title-add-cart">Add to Cart</span>
+                        </button>
+
+                    </div>
+                </div>
+                <span class="products-item-title">ellery x m'o capsule</span>
+                <p class="products-item-txt">Known for her sculptural takes on traditional tailoring, Australian
+                    arbiter of
+                    cool Kym Ellery teams up with Moda Operandi.</p>
+                <span class="products-item-price">$52.00</span>
+            </div>
+            <!--Пагинация  -->
+            <nav class="number-page-catalog">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="#">
+                            <span>&#60;</span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item"><a class="page-link" href="#">6</a></li>
+                    <li class="page-item"><span>.....</span></li>
+                    <li class="page-item"><a class="page-link" href="#">20</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&#62;</span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </section>
 
-
-
-
     </main>
-
     <section class="features">
         <div class="feauters-content container">
             <div class="features-item">
@@ -320,13 +406,6 @@
         </div>
 
     </footer>
-
-
-
-
-
-
-
 </body>
 
 </html>
