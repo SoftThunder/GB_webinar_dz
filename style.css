@@ -982,3 +982,22 @@ align-self: center;
   margin-top: 65px;
   margin-bottom: 32px;
 }
+/*cart.html*/
+
+.main-content-cart {
+  display: flex;
+}
+.card-item-cart {
+  display: flex;
+  width:652px ;
+  height: 306px;
+  border: solid 1px black;
+  box-shadow: #E5E5E5;;
+}
+.img-card-item-cart{
+
+}
+.number-quinty-cart {
+  width: 43px;
+  height: 24px;
+}
