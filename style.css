@@ -1262,3 +1262,20 @@ margin-bottom: 21px;
  color: black;
 
 }
+
+.form-registration-wrp {
+  margin-top: 64px;
+}
+ .fio {
+   display: flex;
+   flex-direction: column;
+ }
+ .label-fio {
+display: block;
+text-transform: uppercase;
+
+ }
+ .inp-name{
+   margin-top: 20px;
+  display: block;
+ }
