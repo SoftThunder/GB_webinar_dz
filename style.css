@@ -24,24 +24,22 @@ justify-content: space-between;
 }
 
 .left_header {
-    display: flex; 
+height: 75px;
+display: flex; 
 align-items: center;
 }
 .search-icon-form {
   width: 30px;
   height: 30px;
   margin: 0 0 0 30%;
-  position: relative;
-  bottom: 27px;
-right: 45px;
 }
 .search-icon-form__label {
   display: block;
   width: 100%;
   height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: transparent; 
+  position: relative;
+  bottom: 27px;
+  right: 40px;
 }
 .search-icon-form__label:hover .search-icon-form__svg {
   fill: gold;
@@ -61,9 +59,9 @@ right: 45px;
   padding: 5px;
   outline: none;
   box-sizing: border-box;
-  background-color: transparent;
   border: none;
-  top: 40px;
+  background-color: transparent;
+  top: 0px;
   left: -119px;
   color: #fff;
   font-size: 16px;
@@ -71,24 +69,19 @@ right: 45px;
   text-transform: capitalize;
 }
 .search-icon-form__input:focus {
-  /*   display: block; */
     width: 150px;
     min-height: 20px;
     transition: width 1s ease;
     border: 2px solid #fff;
   }
-  
   .search-icon-form__input:focus ~ .search-icon-form__label>.search-icon-form__svg {
     fill: aqua;
   }
-  
-
-
-
 .logo_img {
     padding: 41px;
 }
 .right_header {
+  height: 75 px;
     display: flex; 
 align-items: center;
 }
@@ -1272,10 +1265,117 @@ margin-bottom: 21px;
  }
  .label-fio {
 display: block;
-text-transform: uppercase;
+text-transform: capitalize;
+font-weight: 300;
+font-size: 16px;
+line-height: 19px;
+
+color: #222222;
 
  }
  .inp-name{
    margin-top: 20px;
   display: block;
+  height: 44px;
+  width: 359px;
+  padding: 12px 0px 12px 16px;
+  border: 1px solid #a4a4a4;
+  text-transform: capitalize;
+  font-weight: 300;
+font-size: 13px;
+line-height: 16px;
+color: #B1B1B1;
  }
+ .radio-change-male {
+   margin-top: 31px;
+ }
+ .radio-male {
+vertical-align:middle;
+  margin:0;
+ 
+  width: 17px;
+  height: 17px;
+  border: 1px solid #A4A4A4;
+  box-sizing: border-box;
+
+ }
+ .radio-male-title {
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+  margin-right: 20px;
+  }
+  .login-details {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+  }
+  .label-login-details {
+ display: block;
+ text-transform: capitalize;
+ font-weight: 300;
+ font-size: 16px;
+ line-height: 19px;
+ 
+ color: #222222;
+ 
+  }
+  .inp-name{
+    margin-top: 20px;
+   display: block;
+   height: 44px;
+   width: 359px;
+   padding: 12px 0px 12px 16px;
+   border: 1px solid #a4a4a4;
+   text-transform: capitalize;
+   font-weight: 300;
+ font-size: 13px;
+ line-height: 16px;
+ color: #B1B1B1;
+  }
+  .radio-change-male {
+    margin-top: 31px;
+  }
+
+  .rule-for-pwd {
+    width: 390px;
+    height: 32px;
+    box-sizing: border-box;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+   margin-top:  16px; 
+  }
+  .btn-join-now {
+    margin-top:55px ;
+    width: 167px;
+    height: 50px;
+    box-sizing: border-box;
+    background: #F16D7F;
+ 
+  }
+  .txt-btn-join-now{
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    margin-right: 20px;
+   
+  }
+   .arrow-join {
+    background-color: transparent;
+    fill: #ffff
+  }
+  .btn-join-now:hover span  {
+    color:#F16D7F; 
+   
+  }
+  .btn-join-now:hover  {
+      fill:#F16D7F;
+      background-color: #fff;
+  }
+
+  .btn-join-now:hover   {
+    background-color: #FFFFFF;
+  }
