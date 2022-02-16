@@ -1183,10 +1183,10 @@ margin-bottom: 20px;
   font-size: 11px;
   line-height: 13px;
   color: #4A4A4A;
-  
+   padding:10px 14px 12px 14px   ;
 }
 .btn-link-get-quote-cart-txt{
-  margin: auto;
+ 
 }
 .btn-get-quote-cart:hover {
   color: wheat;
