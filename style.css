@@ -95,6 +95,10 @@ align-items: center;
    background-color: transparent;
    border: none; 
 }
+.btn_lk {
+  background-color: transparent;
+  border: none; 
+}
 .menu_img {
     padding: 33px;
 }
@@ -264,7 +268,7 @@ padding-top: 290px;
     background-repeat: no-repeat;
     background-position: center;
     background-blend-mode: darken;
-    text-align: center;
+    text-align: center; 
 }
 
 .kids {
@@ -603,28 +607,33 @@ color: #FBFBFB;
 
 }
 .page-footer-socials-item {
-    display: block;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 32px;
     height: 32px;
     margin-right: 8px;
+    background-color:white
 }
 
-  i {
-      
-      width: 32px;
-      height: 32px;
-    color:black;
-    display:inline-block;
+  .fab{
+display: block;
+    fill:black;
     font-size: 25px;
     line-height: 50px;
-    background-color:white;
-  padding-top: 10px;
-    text-align: center;
+    
+   
  }
- .page-footer-socials-item:hover i {
+ .page-footer-socials-item:hover  {
     background: #F16D7F;
-    color: #E1E1E1;  
+    color: #E1E1E1;
+    fill: #FFFFFF;  
  }
+ .page-footer-socials-item:hover .fab {
+ 
+  fill: #FFFFFF;  
+}
  /* Catalog.html*/
 
  .nav-panel {
@@ -1545,4 +1554,123 @@ max-width: 369px;
 .subscribing-form {
 justify-content: center;
   }
+   }
+   @media  (max-width: 376px) 
+   {
+    .right_header {
+
+      padding: 0;
+
+    }
+    .logo_img {
+      padding: 0px 41px 0px 16px ;
+  }
+    .btn_lk {
+      display: none;
+    }
+    .btn-cart {
+      display: none;
+    }
+
+    .left_desktop {
+      display: none;
+    }
+    .page-header-banner {
+      max-height:363px ;
+    }
+
+    .brand {
+      margin: auto;
+  padding-top: 148px;
+    }
+    .brand-title {
+     
+      font-size: 38px;
+      line-height: 46px;
+    }
+    .brand-subtitle {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    .brand-subtitle span {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    
+  .span_text {
+      font-weight: 700;
+      font-size: 33px;
+      line-height: 58px;
+      color: #F16D7F;;
+      text-transform: uppercase;
+      }
+      .menu_category {
+
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+        flex-wrap: wrap;
+       
+    }
+      .woomen {
+        min-width: 343px;
+        min-height: 247px;
+        margin-bottom: 32px;
+    }
+    .men {
+      min-width: 343px;
+      min-height: 247px;
+      margin-bottom: 32px;
+    }
+    .kids {
+      min-width: 343px;
+      min-height: 247px;
+      margin-bottom: 32px;
+    }
+    .accesories {
+      width: 343px;
+      min-height: 247px;
+      margin: 0px 0px 64px 0px;
+      
+    }
+    .features {
+      min-height:610px ;
+      margin-top: 65px;
+    }
+    .feauters-content {
+      flex-wrap: wrap;
+    }
+    .features-item {
+    margin: 48px 0px 48px 0px;
+    max-width: 369px;
+    }
+    .subscribe {
+      background-image:url(img/subscribe_bg_tablet.png);
+    }
+    .subscribe-content {
+      min-height: 448px;    
+      display: flex ;
+     justify-content: center;
+     flex-wrap: wrap;
+     align-items: center;
+     
+    }
+    .subscribe-info {
+     width: 100%;
+     align-items: center;
+     padding-top: 53px;
+    }
+    .subscribe-info-txt {
+      width: 100%;
+     
+    }
+    
+    .subscribing {
+      width: 100%;
+      margin-bottom: 140px;
+      padding-top: 48px;
+    }
+    .subscribing-form {
+    justify-content: center;
+      }
    }
