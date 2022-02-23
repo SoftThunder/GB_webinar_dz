@@ -12,7 +12,8 @@
         margin: 0 auto;
         }
 body {
-    font-family: 'Lato';} 
+    font-family: "Lato";
+  } 
   
     .page-header{
       box-sizing: border-box;
@@ -86,6 +87,7 @@ align-items: center;
 .right_header {
   height: 75px;
   box-sizing: border-box;
+  padding-right: 44px;
     display: flex; 
 align-items: center;
 }
@@ -156,9 +158,10 @@ padding-top: 290px;
 
   }
   .brand-title-wrp {
-    margin: 0 0 0 50px;
+    margin: 0 50px 0 50px;
     text-transform: uppercase;
     position: relative;
+   
     align-items: center;
   }
   .brand-title-wrp::before {
@@ -212,7 +215,8 @@ padding-top: 290px;
 .woomen {
     display: flex;
     justify-content: center;
-    width: 360px;
+    
+    min-width: 360px;
     min-height: 260px;
     background: rgba(33, 22, 22, 0.7);
     position: relative; 
@@ -251,8 +255,8 @@ padding-top: 290px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 360px;
-    height: 260px;
+    min-width: 360px;
+    min-height: 260px;
     background: rgba(33, 22, 22, 0.7);
     position: relative; 
     background-image: url(img/men.png);
@@ -267,8 +271,8 @@ padding-top: 290px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 360px;
-    height: 260px;
+    min-width: 360px;
+    min-height: 260px;
     background: rgba(33, 22, 22, 0.7);
     position: relative; 
     background-image: url(img/kids.png);
@@ -319,9 +323,11 @@ text-align: center;
 text-transform: capitalize;
 }
 .products-subtitle{
+  font-style: normal;
+  font-weight: normal;
   font-size: 14px;
-line-height: 17px;
-color: #9F9F9F; 
+  line-height: 17px;
+  color: #9F9F9F;
 text-align: center;
 margin-bottom: 48px ;
 
@@ -456,6 +462,7 @@ color: #F26376;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+   
 }
 
 .features-item {
@@ -494,13 +501,14 @@ color: #F26376;
     background-blend-mode: overlay, color;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position:center;
    
 }
 .subscribe-content {
     min-height: 448px;    
     display: flex ;
    justify-content: space-between;
+   flex-wrap: wrap;
 }
 .subscribe-info {
     display: flex ;
@@ -659,6 +667,7 @@ line-height: 29px;
     content: "/\00a0";
   }
   ul.breadcrumb li a, span  {
+    font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
@@ -1434,4 +1443,106 @@ vertical-align:middle;
      margin-right: 22px;
      
 right: 45px;
+   }
+   @media (max-width: 1024px) and (min-width: 768px)  {
+     .container {
+      max-width: 736px;
+     }
+    .page-header-banner {
+      height: 386px;
+      background: #F1E4E6;
+    }
+    .left_desktop {
+      display: flex; 
+      margin-left: 50px;
+  }
+  .left_desktop img {
+    object-fit: inherit; 
+    height: 386px;
+}
+.brand {
+  color: #222222;
+padding-top: 138px;
+}
+.brand-title-wrp {
+margin: 0 20px 0 20px; 
+ 
+}
+.brand-title {
+  margin: 0;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 53px;
+  
+  color: #222222;
+}
+.brand-subtitle {
+  font-size: 24px;
+  line-height: 28px;
+}
+.brand-subtitle span {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.menu_category {
+ 
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.woomen {
+  min-width: 232px;
+  min-height: 167px;
+}
+.men {
+  min-width: 232px;
+  min-height: 167px;
+}
+.kids {
+  min-width: 232px;
+  min-height: 167px;
+}
+.features {
+  min-height:610px ;
+  margin-top: 65px;
+}
+.feauters-content {
+  flex-wrap: wrap;
+}
+.features-item {
+margin: 48px 0px 48px 0px;
+max-width: 369px;
+}
+.subscribe {
+  background-image:url(img/subscribe_bg_tablet.png);
+}
+.subscribe-content {
+  min-height: 448px;    
+  display: flex ;
+ justify-content: center;
+ flex-wrap: wrap;
+ align-items: center;
+ 
+}
+.subscribe-info {
+ width: 100%;
+ align-items: center;
+ padding-top: 53px;
+}
+.subscribe-info-txt {
+  width: 100%;
+ 
+}
+
+.subscribing {
+  width: 100%;
+  margin-bottom: 140px;
+  padding-top: 48px;
+}
+.subscribing-form {
+justify-content: center;
+  }
    }
