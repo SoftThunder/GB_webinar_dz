@@ -1105,6 +1105,7 @@ align-self: center;
   justify-content: space-between;
   margin-top: 65px;
   margin-bottom: 32px;
+  flex-wrap: wrap;
 }
 /*cart.html*/
 
@@ -1265,6 +1266,9 @@ color: #222222;
 margin-right: 37px;
 margin-bottom: 21px;
 
+}
+.grand-total-sum {
+  color: #F16D7F;
 }
 .button-area-grand-total-cart {
 
@@ -1474,6 +1478,7 @@ vertical-align:middle;
      
 right: 45px;
    }
+    /***********************Adaptiv_768****************/
    @media  (max-width: 768px)  {
      .container {
       max-width: 736px;
@@ -1594,9 +1599,43 @@ border-top: 1px solid #EAEAEA;
 padding-top: 129px;
 margin-top: 0px;
   }
+  .main-content-cart {
+  
+flex-wrap: wrap;
+justify-content: center;
+  }
+  .left-main-content-cart {
+    margin-bottom: 64px;
+    width: 100%;
+    
+  }
+  .right-main-content-cart {
+display: flex;
+flex-wrap: nowrap;
+justify-content: space-around;
+    margin-left: 0px;
+    padding: 0px 13px;
+   
+  }
+  .input-address-delivery {
+    width: 100%;
+
+  }
+  .grand-total-cart {
+    width: 100%;
+margin-left: 15px;
+    margin-top: 38px;
+  }
+  .features {
+    display: none;
+  }
    }
+   /***********************Adaptiv_375****************/
    @media   (max-width:375px)
    {
+    .container {
+      max-width: 375px;
+     }
     .right_header {
 
       padding: 0;
@@ -1754,4 +1793,43 @@ margin-top: 0px;
        .filter-sublist-item:last-child {
         margin: 0 0 24px 0;
       }
+      .recomend-product div:last-child {
+        display:block;
+      }
+
+      .recomend-product div:nth-child(2) {
+        display:none;
+      }
+        .characteristic-product {
+          min-width: 375px;
+          flex-wrap: wrap;
+         }
+
+      .text-description-product {
+      width: 100%;
+      }
+      .carousel {
+        min-height: 454px;
+      }
+      .img-carousel {
+     
+        min-width: 300px;
+  
+      }
+      .card-item-cart {
+        width: 100%;
+        height: 214px;
+        box-shadow: 15px 10px 10px #e5e5e5;
+    }
+    .img-item-cart {
+      width: 143px;
+      height: 188px; 
+    }
+      .btn-clear-shoping-cart {     
+        width: 174px;
+        font-size: 12px;
+        line-height: 14px;
+        
+    }
+
    }
